@@ -28,7 +28,7 @@ function sumWhile(list) {
 console.log(sumWhile(l));
 
 function sumRecursion(list) {
-  if (list === 0) {
+  if (list.length === 0) {
     return 0;
   }
   return list[0] + sumRecursion(list.slice(1, list.length));
@@ -41,4 +41,3 @@ function sumTheSimpleWay(list) {
 }
 
 console.log(sumTheSimpleWay(l));
-
